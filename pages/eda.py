@@ -13,4 +13,5 @@ def write():
     components.html(open("./eda/education.html", "r", encoding='utf-8').read(), height=3300)
     st.subheader("Housing")
     components.html(open("./eda/housing.html", "r", encoding='utf-8').read(), height=3000)
-    # TODO: cannot run climate.ipynb
+    st.subheader("Climate")
+    components.html(open("./eda/climate.html", "r", encoding='utf-8').read(), height=6700)
