@@ -3,10 +3,12 @@ import streamlit as st
 
 import pages.home
 import pages.eda
+import pages.visualization
 
 PAGES = {
     "Home": pages.home,
     "EDA": pages.eda,
+    "Visualization": pages.visualization,
 }
 
 
