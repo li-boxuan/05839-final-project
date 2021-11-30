@@ -1,2 +1,6 @@
 streamlit
 awesome_streamlit
+matplotlib
+seaborn
+numpy
+pandas
