@@ -54,12 +54,25 @@ def write():
     counties = st.multiselect(
         'View data of :',
         full_data.index,
-        ["Allegheny, Pennsylvania"]
+        ["Allegheny, Pennsylvania", "Philadelphia, Pennsylvania", "New York, New York", "San Francisco, California"]
     )
     # st.write(counties)
     df_counties = full_data.loc[counties]
     st.dataframe(df_counties)
 
     columns = full_data.columns
+
+    if len(counties) > 1:
+        column = st.selectbox(
+            "Select a column to compare the above counties...",
+            columns
+        )
+        fig, ax = plt.subplots()
+        df_comparison = df_counties.copy()
+        df_comparison["County"] = df_comparison.index
+
+        sns.barplot(y="County", x=column, data=df_comparison, ax=ax, orient="h")
+        st.pyplot(fig)
+
     draw_top_ten(full_data, columns)
     draw_bottom_ten(full_data, columns)
