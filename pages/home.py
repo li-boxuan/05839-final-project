@@ -6,7 +6,7 @@ def write():
     
     In this study, we explore several datasets that provides demographic, housing, climate, education and economic data for each county in the USA. After cleaning the dataset and performing exploratary analysis, we found some interesting results. 
     
-    - Not surprisingly, several counties from California, Massachusetts and New York have the highest median housing price. However, 19 of the top counties with highest housing price growth from 2019 to 2021 are counties in Idaho
+    - Not surprisingly, several counties from California, Massachusetts and New York have the highest median housing price. However, 19 of the top 20 counties with highest housing price growth from 2019 to 2021 are counties in Idaho
     - Among the top 10 counties with the most commute time, the majority of residents in most counties (for example, Los Angeles County, Cook County and etc.) choose to drive, while in Kings County and Queens County, a decent amount of residents choose public transportation.
     - 9 out of 20 counties with highest percent of adults with advanced degree are from Washington Metropolitan Area.
 
@@ -14,7 +14,7 @@ def write():
 
     In the end, we provide a tool where users can find counties that are similar to certain counties in certain aspects. For example, a user lives in Allegheny county and they are thinking about moving. They enjoy the weather and the traffic in Allegheny, so they look for counties of similar weather and commute time. It turns out that Ashe County in NC, Hendricks County in IN, Henry County in IN, Washington County in PA and Greene County in PA are good candidates.
     """)
-    
+
     st.header("Datasets")
 
     st.markdown("""
