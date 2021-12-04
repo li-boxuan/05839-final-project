@@ -13,8 +13,9 @@ def normalize_data(df):
 def get_nearest_neighbors(df, columns, county):
     if len(columns) == 0:
         return []
-    target = df[df["County"] == county][columns].to_numpy()
-    data = df[columns].to_numpy()
+    target = df[df["County"] == county][columns]
+    target = target.dropna().to_numpy()
+    data = df[columns].dropna().to_numpy()
     model = NearestNeighbors(n_neighbors = 6, ).fit(data)
     nbrs = model.kneighbors(target, return_distance=False)
     nbrs = df.loc[nbrs[0]]
@@ -23,7 +24,7 @@ def get_nearest_neighbors(df, columns, county):
 
     
 def write():    
-    st.subheader("Find counties that are similiar to your favorite county in your selected aspects.")
+    st.subheader("Find counties that are similiar to your favorite county in selected aspects.")
 
 
     df = load_data()
