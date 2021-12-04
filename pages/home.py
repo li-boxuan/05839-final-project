@@ -5,9 +5,13 @@ def write():
     st.header("Team Members")
     st.markdown("""
     Boxuan Li (boxuanli)
+
     Jiachen Wang (jw7)
+
     Fan Shi (fans)
+
     Fangwei Gao (fangweig)
+
     """)
 
     st.header("Introduction")
@@ -23,7 +27,7 @@ def write():
 
     To help users get a better understanding on different aspects of counties, we create a visualization tool where users can compare among any counties. Users can choose any aspect that they are interested in and see what are the top/last 10 counties with that aspect. Bar plots are also available for visualization. 
 
-    By applying KNN, we provide a tool where users can find counties that are similar to certain counties in certain aspects. For example, a user lives in Allegheny county and they are thinking about moving. They enjoy the weather and the traffic in Allegheny, so they look for counties of similar weather and commute time. It turns out that Ashe County in NC, Hendricks County in IN, Henry County in IN, Washington County in PA and Greene County in PA are good candidates.
+    By applying Nearest Neighbor, we provide a tool where users can find counties that are similar to certain counties in certain aspects. For example, a user lives in Allegheny county and they are thinking about moving. They enjoy the weather and the traffic in Allegheny, so they look for counties of similar weather and commute time. It turns out that Ashe County in NC, Hendricks County in IN, Henry County in IN, Washington County in PA and Greene County in PA are good candidates.
     """)
 
     st.header("Datasets")
