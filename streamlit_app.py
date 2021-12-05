@@ -10,8 +10,8 @@ import pages.map_visualization
 PAGES = {
     "Home": pages.home,
     "EDA": pages.eda,
-    "Map Visualization": pages.map_visualization,
     "Visualization": pages.visualization,
+    "Map Visualization": pages.map_visualization,
     "Find Your Favored Counties": pages.favored_county,
 }
 

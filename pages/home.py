@@ -44,5 +44,3 @@ def write():
 
     """
     )
-
-    st.header("Video")
