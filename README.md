@@ -1,10 +1,21 @@
 # Interactive Visualization of U.S. Counties
 
 ## Team Members
-Boxuan Li
-Jiachen Wang
-Fan Shi
-Fangwei Gao
+- Boxuan Li
+- Jiachen Wang
+- Fan Shi
+- Fangwei Gao
+
+## Quick Start
+
+Check out [the online version](https://share.streamlit.io/li-boxuan/05839-final-project) of our visualization! Alternatively,
+you can also clone this repository, and run
+
+```python
+streamlit run streamlit_app.py
+```
+
+to host the website locally.
 
 ## Introduction
 In this study, we explore several datasets that provides demographic, housing, climate, education and economic data for each county in the USA.
