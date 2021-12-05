@@ -44,3 +44,7 @@ def write():
 
     """
     )
+
+    st.header("Video")
+    st.video("https://youtu.be/DGFUlDFOydc")
+    
