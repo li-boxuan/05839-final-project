@@ -5,3 +5,5 @@ seaborn
 numpy
 pandas
 sklearn
+altair
+vega_datasets
