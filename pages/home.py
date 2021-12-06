@@ -2,6 +2,10 @@ import streamlit as st
 
 def write():
     st.title("Find Your Favorite Counties")
+    st.header("GitHub Link")
+    st.markdown("""
+    [05839-final-project](https://github.com/li-boxuan/05839-final-project)
+    """)
     st.header("Team Members")
     st.markdown("""
     Boxuan Li (boxuanli)
